@@ -143,6 +143,7 @@ export default function Home() {
             </Paragraph>
             <video controls className="rounded-md">
               <source src="/videos/carbon-health-booking-demo.webm" />
+              <source src="/videos/carbon-health-booking-demo.mp4" />
             </video>
           </Group>
         </div>
