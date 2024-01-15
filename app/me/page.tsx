@@ -1,5 +1,4 @@
-import Image from "next/image";
-import { Page, Section } from "@composition/index";
+import { Page, Section } from "@app/_ui/index";
 
 export default function Me() {
   return (
