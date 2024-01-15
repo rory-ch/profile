@@ -11,7 +11,7 @@ const getIndex = (pathname: string) => {
 const getWidthAndPosition = (index: number, total: number) => {
   switch (total) {
     case 2: {
-      if (index < 0 || index > 1) throw new Error("Invalid underline index.");
+      if (index < 0 || index > 1) break;
       return `w-[50%] ${index === 0 ? "translate-x-0" : "translate-x-full"}`;
     }
     default: {
