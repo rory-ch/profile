@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Rory Roccio - Software Engineer",
+  description: "Follow me for software engineering insights!",
 };
 
 export default function Me() {

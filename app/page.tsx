@@ -10,6 +10,7 @@ import { Code, H2, H3, Highlight, Paragraph } from "@ui";
 
 export const metadata: Metadata = {
   title: "Rory Roccio - Software Engineer",
+  description: "Follow me for software engineering insights!",
 };
 
 const SkillLevel = ({ children }: React.PropsWithChildren) => (
