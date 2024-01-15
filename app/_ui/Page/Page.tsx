@@ -1,7 +1,7 @@
 import React from "react";
 
 const Page = ({ children }: React.PropsWithChildren) => (
-  <main className="flex flex-col bg-slate-800 w-full min-h-screen pt-14 mb-2">
+  <main className="flex flex-col bg-slate-800 w-full min-h-screen pt-14 pb-20 mb-2">
     {children}
   </main>
 );
