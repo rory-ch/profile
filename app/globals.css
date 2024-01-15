@@ -21,3 +21,7 @@ span {
   display: flex;
   flex-direction: row;
 }
+
+em {
+  font-style: normal;
+}
