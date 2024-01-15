@@ -4,12 +4,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import carbonHealthLogo from "./_assets/carbon-health-logo.svg";
-import { H1, H2, H3 } from "./_ui/Typography/Heading";
+import hackReactorLogo from "./_assets/logos/hack-reactor.svg";
+import { H2, H3 } from "./_ui/Typography/Heading";
 import { Code } from "./_ui/Typography/Code";
 import { monoLight } from "./_ui/Typography/fonts/mono-light";
 import { Highlight, Paragraph } from "./_ui/Typography";
 import { Introduction } from "./_introduction/Introduction";
-// import { bookingDemo } from "./_assets/carbon-health-booking-demo.webm";
 
 export const metadata: Metadata = {
   title: "Rory",
@@ -240,14 +240,16 @@ export default function Home() {
             </Group>
             <Group>
               <span className="gap-2">
-                <Image
-                  src={carbonHealthLogo}
-                  width={20}
-                  height={20}
-                  alt="Carbon Health logo"
-                />
+                <span className="bg-slate-600 rounded-full h-7 w-7 grow-0 shrink-0 items-center justify-center">
+                  <Image
+                    src={hackReactorLogo}
+                    width={20}
+                    height={20}
+                    alt="Hack Reactor logo"
+                  />
+                </span>
 
-                <H3>Carbon Health, Software Engineer II, Growth</H3>
+                <H3>Hack Reactor Software Engineering Bootcamp</H3>
               </span>
               <em>🏢 San Francisco 📅 January 2020 - April 2020</em>
               <Paragraph>
@@ -268,10 +270,10 @@ export default function Home() {
               <em>🏢 San Francisco 📅 May 2018 - May 2020</em>
             </Group>
             <Group>
-              <H3>
-                U.S. Marine Corps, Sergeant, Cryptolinguistics & Amphibious
-                Reconnaissance
-              </H3>
+              <H3>U.S. Marine Corps</H3>
+              <em>
+                🪖 Sergeant, Cryptolinguistics & Amphibious Reconnaissance
+              </em>
               <em>📅 August 2010 - August 2015</em>
             </Group>
           </div>
@@ -282,11 +284,20 @@ export default function Home() {
 
             <Group>
               <H3>Middlebury Institute of International Studies</H3>
+              <em>🎓 M.A. International Policy & Development</em>
               <em>🏫 Monterey, CA 📅 May 2016 - August 2015</em>
+              <Paragraph>
+                Contentrating on:
+                <ul className="list-disc ml-4">
+                  <li>Financial Crimes</li>
+                  <li>Russian</li>
+                </ul>
+              </Paragraph>
             </Group>
 
             <Group>
               <H3>Kazan Federal University</H3>
+              <em>🎓 Special Russian Language Program</em>
               <em>🏫 Kazan, Tatarstan, Russia 📅 September 2015 - May 2016</em>
             </Group>
           </div>
