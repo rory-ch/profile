@@ -11,7 +11,7 @@ const Pill = ({
 }>) => {
   return (
     <span
-      className={`items-center gap-2 py-1 px-2 tracking-tight rounded-md text-sm ${color} ${robotoMono.className}`}
+      className={`items-center gap-2 py-1 px-2 tracking-tight rounded-md text-sm whitespace-nowrap ${color} ${robotoMono.className}`}
     >
       {children}
     </span>

@@ -29,7 +29,7 @@ export const Introduction = () => (
         📝 documented, and 📈 scalable
       </em>
     </span>
-    <span className="gap-2">
+    <span className="gap-2 flex-wrap">
       <Link href="https://github.com/rory-ch">
         <Pill color="bg-slate-700">
           <Image src={github} height={20} width={20} alt="GitHub OctoCat" />

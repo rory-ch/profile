@@ -4,11 +4,13 @@ import { Underline } from "../Underline";
 import { config } from "../config";
 import { Roboto_Mono } from "next/font/google";
 
-const roboto = Roboto_Mono({ weight: "200", subsets: ["latin"] });
+const roboto = Roboto_Mono({ weight: "400", subsets: ["latin"] });
 
 const Item = ({ children }: React.PropsWithChildren) => {
   return (
-    <span className={`flex justify-center w-60 ${roboto.className}`}>
+    <span
+      className={`flex justify-center w-1/2 whitespace-nowrap ${roboto.className}`}
+    >
       {children}
     </span>
   );
@@ -16,8 +18,8 @@ const Item = ({ children }: React.PropsWithChildren) => {
 
 const Nav = () => {
   return (
-    <nav className="flex justify-center w-full bg-slate-800 text-slate-50 p-4 fixed shadow-[0_1px_1px_0_rgba(255,255,255,0.1)]">
-      <div className="flex-row uppercase font-mono relative">
+    <nav className="flex sm:justify-center w-full bg-slate-800/95 text-slate-50 py-4 sm:ph-4 fixed shadow-[0_1px_1px_0_rgba(255,255,255,0.1)]">
+      <div className="flex-row uppercase font-mono relative w-full">
         <Item>
           <Link href={config[0].href}>{config[0].label}</Link>
         </Item>
