@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import { H1, Pill } from "@ui";
 import avatar from "@assets/avatar.jpg";
 import github from "@assets/logos/github-mark-white.svg";
@@ -33,15 +32,15 @@ export const Introduction = () => (
       </em>
     </div>
     <span className="gap-2 flex-wrap">
-      <Link href="https://github.com/rory-ch">
+      <a href="https://github.com/rory-ch">
         <Pill color="bg-slate-700">
           <Image src={github} height={20} width={20} alt="GitHub OctoCat" />
           rory-ch
         </Pill>
-      </Link>
-      <Link href="mailto:rory.roccio@gmail.com">
+      </a>
+      <a href="mailto:rory.roccio@gmail.com">
         <Pill color="bg-slate-700">rory.roccio@gmail.com</Pill>
-      </Link>
+      </a>
     </span>
   </div>
 );

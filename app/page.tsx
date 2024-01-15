@@ -164,7 +164,7 @@ export default function Home() {
             </span>
             <em>🏢 San Francisco / Remote</em>
             <em>📅 Aug 2020 - Jan 2024</em>
-            <ul className="flex flex-col gap-2 list-disc ml-4">
+            <ul className="flex flex-col gap-2 list-disc ml-5">
               <li>
                 Collaborate with design, product, marketing, engineering to
                 develop product specifications
@@ -279,13 +279,15 @@ export default function Home() {
             <em>🎓 M.A. International Policy & Development</em>
             <em>🏫 Monterey, CA</em>
             <em>📅 May 2016 - Aug 2015</em>
-            <Paragraph>
-              Contentrating on:
-              <ul className="list-disc ml-4">
-                <li>Financial Crimes</li>
-                <li>Russian</li>
-              </ul>
-            </Paragraph>
+            <Paragraph>Contentrating on:</Paragraph>
+            <ul className="list-disc ml-5">
+              <li>
+                <Paragraph>Financial Crimes</Paragraph>
+              </li>
+              <li>
+                <Paragraph>Russian</Paragraph>
+              </li>
+            </ul>
           </Group>
 
           <Group>
