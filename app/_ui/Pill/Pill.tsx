@@ -7,11 +7,11 @@ const Pill = ({
   children,
   color,
 }: React.PropsWithChildren<{
-  color: "bg-emerald-700" | "bg-amber-700";
+  color: "bg-emerald-700" | "bg-teal-700" | "bg-sky-700" | "bg-slate-600";
 }>) => {
   return (
     <span
-      className={`items-center gap-2 py-1 px-2 rounded-md ${color} ${robotoMono.className}`}
+      className={`items-center gap-2 py-1 px-2 tracking-tight rounded-md text-sm ${color} ${robotoMono.className}`}
     >
       {children}
     </span>
