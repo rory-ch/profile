@@ -1,8 +1,13 @@
 import Image from "next/image";
 import { Page, Section } from "@composition/index";
+import type { Metadata } from "next";
 
 const Pill = ({ children }: React.PropsWithChildren) => {
   return <span className="py-1 px-2 rounded-md bg-slate-600">{children}</span>;
+};
+
+export const metadata: Metadata = {
+  title: "Rory",
 };
 
 export default function Home() {
