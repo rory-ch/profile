@@ -17,20 +17,15 @@ export const Introduction = () => (
       />
       <H1>Rory Roccio</H1>
     </span>
-    <span className="sm:flex-col flex-wrap">
-      <em className="not-italic text-lg text-slate-300">Software Engineer</em>
-      <em className="not-italic whitespace-nowrap">
-        Code that is ⚡ fast,
-        <wbr />
-        💄 elegant,
-        <wbr />
-        🧪 tested,
-        <wbr />
-        📝 documented, and
-        <wbr />
-        📈 scalable
+    <div className="sm:flex-col flex-wrap">
+      <em className="text-lg text-slate-300 tracking-wider">
+        Software Engineer
       </em>
-    </span>
+      <em className="text-sm flex flex-row flex-wrap">
+        Code that is <span>⚡ fast</span> <span>💄 elegant</span>{" "}
+        <span>🧪 tested</span> <span>📝 documented</span> 📈 scalable
+      </em>
+    </div>
     <span className="gap-2 flex-wrap">
       <Link href="https://github.com/rory-ch">
         <Pill color="bg-slate-700">
