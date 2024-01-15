@@ -113,18 +113,20 @@ export default function Home() {
             <H2>Projects</H2>
             <Group>
               <H3>Los Angeles COVID Vaccine Distribution</H3>
-              <em>📅 December 2020 - April 2021</em>
+              <em>📅 Dec 2020 - Apr 2021</em>
               <Paragraph>
                 I personally built the public facing web page for scheduling
                 COVID-19 vaccinations for the County of Los Angeles, which, at
                 its peak, received{" "}
-                <Highlight>264 thousand views per day</Highlight>. This project
-                is the one I am most proud of. My team operated under very tight
-                deadlines with rapidly changing requirements. We had heavy
-                pressure from the mayor and from county residents who after a
-                year of the pandemic, were bursting with anticipation to get
-                vaccinated. This was a very important lesson in scaling and
-                managing user traffic which I will never forget.
+                <Highlight>264 thousand views per day</Highlight>.{" "}
+              </Paragraph>
+              <Paragraph>
+                This project is the one I am most proud of. My team operated
+                under very tight deadlines with rapidly changing requirements.
+                We had heavy pressure from the mayor and from county residents
+                who after a year of the pandemic, were bursting with
+                anticipation to get vaccinated. This was a very important lesson
+                in scaling and managing user traffic which I will never forget.
               </Paragraph>
               <a
                 href="https://web.archive.org/web/20210401011258/https://carbonhealth.com/covid-19-vaccines/los-angeles"
@@ -137,7 +139,7 @@ export default function Home() {
             </Group>
             <Group>
               <H3>Core Appointment Scheduling Flow Rebuild</H3>
-              <em>📅 January 2023 - December 2023</em>
+              <em>📅 Jan 2023 - Dec 2023</em>
               <Paragraph>
                 With close collaboration with design, product, data science, and
                 engineering teams, I built what is now the company's primary
@@ -171,7 +173,8 @@ export default function Home() {
 
                 <H3>Carbon Health, Software Engineer II, Growth</H3>
               </span>
-              <em>🏢 San Francisco / Remote 📅 Aug 2020 - January 2024</em>
+              <em>🏢 San Francisco / Remote</em>
+              <em>📅 Aug 2020 - Jan 2024</em>
               <ul className="flex flex-col gap-2 list-disc ml-4">
                 <li>
                   Collaborate with design, product, marketing, engineering to
@@ -251,7 +254,8 @@ export default function Home() {
 
                 <H3>Hack Reactor Software Engineering Bootcamp</H3>
               </span>
-              <em>🏢 San Francisco 📅 January 2020 - April 2020</em>
+              <em>🏢 San Francisco</em>
+              <em>📅 Jan 2020 - Apr 2020</em>
               <Paragraph>
                 Completed a full-stack software engineering boot camp based on
                 the MERN stack.
@@ -267,14 +271,15 @@ export default function Home() {
             </Group>
             <Group>
               <H3>Kroll, Investigations</H3>
-              <em>🏢 San Francisco 📅 May 2018 - May 2020</em>
+              <em>🏢 San Francisco</em>
+              <em>📅 May 2018 - May 2020</em>
             </Group>
             <Group>
               <H3>U.S. Marine Corps</H3>
               <em>
                 🪖 Sergeant, Cryptolinguistics & Amphibious Reconnaissance
               </em>
-              <em>📅 August 2010 - August 2015</em>
+              <em>📅 Aug 2010 - Aug 2015</em>
             </Group>
           </div>
         </Section>
@@ -285,7 +290,8 @@ export default function Home() {
             <Group>
               <H3>Middlebury Institute of International Studies</H3>
               <em>🎓 M.A. International Policy & Development</em>
-              <em>🏫 Monterey, CA 📅 May 2016 - August 2015</em>
+              <em>🏫 Monterey, CA</em>
+              <em>📅 May 2016 - Aug 2015</em>
               <Paragraph>
                 Contentrating on:
                 <ul className="list-disc ml-4">

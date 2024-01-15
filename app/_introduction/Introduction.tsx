@@ -26,7 +26,9 @@ export const Introduction = () => (
         <wbr />
         🧪 tested,
         <wbr />
-        📝 documented, and 📈 scalable
+        📝 documented, and
+        <wbr />
+        📈 scalable
       </em>
     </span>
     <span className="gap-2 flex-wrap">
