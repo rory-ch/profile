@@ -39,6 +39,7 @@ export default function Home() {
                 <Pill>React</Pill>
                 <Pill>React Native</Pill>
                 <Pill>Next.js</Pill>
+                <Pill>Tailwind</Pill>
               </ul>
             </div>
           </div>
