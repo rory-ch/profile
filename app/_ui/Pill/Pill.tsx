@@ -1,7 +1,5 @@
-import { Roboto, Roboto_Mono } from "next/font/google";
 import React from "react";
-
-const robotoMono = Roboto_Mono({ weight: "500", subsets: ["latin"] });
+import { monoMed } from "../Typography/fonts/mono-med";
 
 const Pill = ({
   children,
@@ -11,7 +9,7 @@ const Pill = ({
 }>) => {
   return (
     <span
-      className={`items-center gap-2 py-1 px-2 tracking-tight rounded-md text-sm whitespace-nowrap ${color} ${robotoMono.className}`}
+      className={`items-center gap-2 py-1 px-2 tracking-tight rounded-md text-sm whitespace-nowrap ${color} ${monoMed.className}`}
     >
       {children}
     </span>

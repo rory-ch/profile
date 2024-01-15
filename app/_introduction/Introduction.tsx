@@ -1,9 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Pill } from "@ui/Pill";
-import { H1 } from "@ui/Typography";
-import avatar from "@app/_assets/avatar.jpg";
-import github from "@app/_assets/logos/github-mark-white.svg";
+import { H1, Pill } from "@ui";
+import avatar from "@assets/avatar.jpg";
+import github from "@assets/logos/github-mark-white.svg";
 
 export const Introduction = () => (
   <div className="gap-2 pt-10">
@@ -21,9 +20,16 @@ export const Introduction = () => (
       <em className="text-lg text-slate-300 tracking-wider">
         Software Engineer
       </em>
-      <em className="text-sm flex flex-row flex-wrap">
-        Code that is <span>⚡ fast</span> <span>💄 elegant</span>{" "}
-        <span>🧪 tested</span> <span>📝 documented</span> 📈 scalable
+      <em className="text-sm flex flex-row flex-wrap gap-x-2">
+        Code that is
+        <span className="gap-1">
+          <span>⚡ fast</span>
+          <span>💄 elegant</span>
+          <span>🧪 tested</span>
+        </span>
+        <span className="gap-1">
+          <span>📝 documented</span> 📈 scalable
+        </span>
       </em>
     </div>
     <span className="gap-2 flex-wrap">

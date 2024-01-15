@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
 import { Nav } from "./_nav/Nav";
+import { Page, Section } from "./_ui";
+import { Introduction } from "./_introduction/Introduction";
 
 const roboto = Roboto({ weight: "400", subsets: ["latin"] });
 
@@ -19,7 +21,13 @@ export default function RootLayout({
     <html lang="en">
       <body className={`bg-slate-800 text-slate-100 ${roboto.className}`}>
         <Nav />
-        {children}
+        <Page>
+          <Section>
+            <Introduction />
+            <span className="h-6" />
+          </Section>
+          {children}
+        </Page>
       </body>
     </html>
   );
