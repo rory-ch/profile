@@ -15,4 +15,4 @@ const personal: ItemConfig = {
   href: Pages.me.pathname,
 };
 
-export const config = [professional, personal];
+export const config = [professional, personal] as const;
