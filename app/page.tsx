@@ -123,6 +123,8 @@ export default function Home() {
             <a
               href="https://web.archive.org/web/20210401011258/https://carbonhealth.com/covid-19-vaccines/los-angeles"
               className="self-start"
+              target="_blank"
+              rel="noreferrer noopener"
             >
               <Pill color="bg-indigo-700">View project in the archive ↗️</Pill>
             </a>
@@ -145,6 +147,8 @@ export default function Home() {
             <a
               href="https://carbonhealth.com/booking?selectedTopic=urgent-care"
               className="self-start md:hidden"
+              target="_blank"
+              rel="noreferrer noopener"
             >
               <Pill color="bg-indigo-700">Try it here ↗️</Pill>
             </a>
@@ -191,12 +195,14 @@ export default function Home() {
                 Build new features for and maintain:
                 <dl className="ml-4">
                   <dt className="mt-2">
-                    <Link
+                    <a
                       href="https://carbonhealth.com"
                       className="underline text-blue-400"
+                      target="_blank"
+                      rel="noreferrer noopener"
                     >
-                      carbonhealth.com
-                    </Link>
+                      carbonhealth.com ↗️
+                    </a>
                   </dt>
                   <dd>
                     A <Code>Next.js</Code> application which functions as the
@@ -206,8 +212,10 @@ export default function Home() {
                     <a
                       href="https://apps.apple.com/us/app/carbon-health-medical-care/id1152807572"
                       className="underline text-blue-400"
+                      target="_blank"
+                      rel="noreferrer noopener"
                     >
-                      Carbon Health - Medical Care
+                      Carbon Health - Medical Care ↗️
                     </a>
                   </dt>
                   <dd>
@@ -220,8 +228,10 @@ export default function Home() {
                     <a
                       href="https://apps.apple.com/us/app/carbon-health-for-providers/id1153040105"
                       className="underline text-blue-400"
+                      target="_blank"
+                      rel="noreferrer noopener"
                     >
-                      Carbon Health - For Providers
+                      Carbon Health - For Providers ↗️
                     </a>
                   </dt>
                   <dd>
