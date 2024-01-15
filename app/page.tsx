@@ -141,9 +141,25 @@ export default function Home() {
               This flow is responsible for almost all of the company's
               user-initiated visit scheduling.
             </Paragraph>
-            <video controls className="rounded-md">
-              <source src="/videos/carbon-health-booking-demo.webm" />
-              <source src="/videos/carbon-health-booking-demo.mp4" />
+
+            <a
+              href="https://carbonhealth.com/booking?selectedTopic=urgent-care"
+              className="self-start md:hidden"
+            >
+              <Pill color="bg-indigo-700">Try it here ↗️</Pill>
+            </a>
+
+            <span className="text-xs">* Demo video coming soon!</span>
+
+            <video controls playsInline className="rounded-md hidden md:flex">
+              <source
+                src="/videos/carbon-health-booking-demo.webm"
+                type="video/webm"
+              />
+              <source
+                src="/videos/carbon-health-booking-demo.mp4"
+                type="video/mp4"
+              />
             </video>
           </Group>
         </div>
