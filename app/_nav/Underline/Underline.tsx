@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { config } from "../config";
 
 const getIndex = (pathname: string) => {
-  return config.findIndex(item => item.href === pathname);
+  return config.findIndex(item => item.href === pathname) || 0;
 };
 
 const getWidthAndPosition = (index: number, total: number) => {
