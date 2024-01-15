@@ -31,7 +31,13 @@ export default async function Image() {
             paddingBottom: 40,
           }}
         >
-          <div style={{ display: "flex", flexDirection: "column" }}>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              marginBottom: 40,
+            }}
+          >
             <span style={{ fontSize: 120, letterSpacing: 1.2 }}>
               Rory Roccio
             </span>
