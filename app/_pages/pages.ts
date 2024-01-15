@@ -4,11 +4,11 @@ type Page = {
 };
 
 export const home: Page = {
-  label: "Professional",
+  label: "Resume",
   pathname: "/",
 };
 
 export const me: Page = {
-  label: "Personal",
+  label: "More About me",
   pathname: "/me",
 };

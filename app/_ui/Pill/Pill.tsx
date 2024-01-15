@@ -7,7 +7,7 @@ const Pill = ({
   children,
   color,
 }: React.PropsWithChildren<{
-  color: "bg-emerald-700" | "bg-teal-700" | "bg-sky-700" | "bg-slate-600";
+  color: string;
 }>) => {
   return (
     <span

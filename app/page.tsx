@@ -1,20 +1,22 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Page, Section, Pill } from "@app/_ui";
 import type { Metadata } from "next";
-import { Roboto_Mono } from "next/font/google";
 import Link from "next/link";
 import Image from "next/image";
 import carbonHealthLogo from "./_assets/carbon-health-logo.svg";
-import avatar from "./_assets/face.jpg";
+import { H1, H2, H3 } from "./_ui/Typography/Heading";
+import { Code } from "./_ui/Typography/Code";
+import { monoLight } from "./_ui/Typography/fonts/mono-light";
+import { Highlight, Paragraph } from "./_ui/Typography";
+import { Introduction } from "./_introduction/Introduction";
+// import { bookingDemo } from "./_assets/carbon-health-booking-demo.webm";
 
 export const metadata: Metadata = {
   title: "Rory",
 };
 
-const robotoMono = Roboto_Mono({ weight: "300", subsets: ["latin"] });
-
 const SkillLevel = ({ children }: React.PropsWithChildren) => (
-  <em className={`text-xs ${robotoMono.className}`}>{children}</em>
+  <em className={`text-xs ${monoLight.className}`}>{children}</em>
 );
 
 type Expertise = "expert" | "good" | "novice";
@@ -44,31 +46,9 @@ const TagList = ({ children }: React.PropsWithChildren) => (
 );
 
 const Group = ({ children }: React.PropsWithChildren) => (
-  <div className="border rounded-md p-2 border-slate-700 gap-2">{children}</div>
-);
-
-const H1 = ({ children }: React.PropsWithChildren) => (
-  <h1 className="text-5xl">{children}</h1>
-);
-
-const H2 = ({ children }: React.PropsWithChildren) => (
-  <h2 className="text-3xl">{children}</h2>
-);
-
-const H3 = ({ children }: React.PropsWithChildren) => (
-  <h3 className="text-xl">{children}</h3>
-);
-
-const Code = ({ children }: React.PropsWithChildren) => (
-  <code
-    className={`py-0.5 px-1.5 rounded-md bg-slate-700 text-xs ${robotoMono.className}`}
-  >
+  <div className="border rounded-md p-3 border-slate-700 gap-2 bg-slate-900/20">
     {children}
-  </code>
-);
-
-const Logo = ({ src }: { src: any }) => (
-  <Image src={src} height={20} width={20} alt="" aria-hidden />
+  </div>
 );
 
 export default function Home() {
@@ -76,24 +56,7 @@ export default function Home() {
     <Page>
       <div className="gap-6">
         <Section>
-          <div className="gap-2 pt-10">
-            <span className="items-center gap-2">
-              <Image
-                src={avatar}
-                height={363}
-                width={363}
-                className="rounded-full shrink-0 grow-0 w-12 h-12"
-                alt="Rory Roccio"
-              />
-              <H1>Rory Roccio</H1>
-            </span>
-            <span>
-              <em className="not-italic">Software Engineer</em>
-              <em className="not-italic">
-                ⚡ Fast 💄 Elegant 🧪 Tested 📝 Documented 📈 Scalable
-              </em>
-            </span>
-          </div>
+          <Introduction />
         </Section>
 
         <Section>
@@ -146,9 +109,50 @@ export default function Home() {
         </Section>
 
         <Section>
-          <div>
+          <div className="gap-2">
             <H2>Projects</H2>
-            <h3 className="text-lg">Carbon Health</h3>
+            <Group>
+              <H3>Los Angeles COVID Vaccine Distribution</H3>
+              <em>📅 December 2020 - April 2021</em>
+              <Paragraph>
+                I personally built the public facing web page for scheduling
+                COVID-19 vaccinations for the County of Los Angeles, which, at
+                its peak, received{" "}
+                <Highlight>264 thousand views per day</Highlight>. This project
+                is the one I am most proud of. My team operated under very tight
+                deadlines with rapidly changing requirements. We had heavy
+                pressure from the mayor and from county residents who after a
+                year of the pandemic, were bursting with anticipation to get
+                vaccinated. This was a very important lesson in scaling and
+                managing user traffic which I will never forget.
+              </Paragraph>
+              <a
+                href="https://web.archive.org/web/20210401011258/https://carbonhealth.com/covid-19-vaccines/los-angeles"
+                className="self-start"
+              >
+                <Pill color="bg-indigo-700">
+                  View project in the archive ↗️
+                </Pill>
+              </a>
+            </Group>
+            <Group>
+              <H3>Core Appointment Scheduling Flow Rebuild</H3>
+              <em>📅 January 2023 - December 2023</em>
+              <Paragraph>
+                With close collaboration with design, product, data science, and
+                engineering teams, I built what is now the company's primary
+                visit scheduling flow. Features include clinic and time
+                selection, account creation, logging in, drop-off email flow,
+                family member selection, cancelling, and rescheduling.
+              </Paragraph>
+              <Paragraph>
+                This flow is responsible for almost all of the company's
+                user-initiated visit scheduling.
+              </Paragraph>
+              <video controls className="rounded-md">
+                <source src="/videos/carbon-health-booking-demo.webm" />
+              </video>
+            </Group>
           </div>
         </Section>
 
@@ -165,9 +169,9 @@ export default function Home() {
                   alt="Carbon Health logo"
                 />
 
-                <H3>Carbon Health, Software Engineer II</H3>
+                <H3>Carbon Health, Software Engineer II, Growth</H3>
               </span>
-              <em>🏢 San Francisco 📅 Aug 2020 - January 2024</em>
+              <em>🏢 San Francisco / Remote 📅 Aug 2020 - January 2024</em>
               <ul className="flex flex-col gap-2 list-disc ml-4">
                 <li>
                   Collaborate with design, product, marketing, engineering to
@@ -235,12 +239,21 @@ export default function Home() {
               </TagList>
             </Group>
             <Group>
-              <H3>Hack Reactor</H3>
+              <span className="gap-2">
+                <Image
+                  src={carbonHealthLogo}
+                  width={20}
+                  height={20}
+                  alt="Carbon Health logo"
+                />
+
+                <H3>Carbon Health, Software Engineer II, Growth</H3>
+              </span>
               <em>🏢 San Francisco 📅 January 2020 - April 2020</em>
-              <p>
+              <Paragraph>
                 Completed a full-stack software engineering boot camp based on
                 the MERN stack.
-              </p>
+              </Paragraph>
               <TagList>
                 <SkillPill skill="JavaScript" />
                 <SkillPill skill="React" />
@@ -249,6 +262,32 @@ export default function Home() {
                 <SkillPill skill="MonogoDB" />
                 <SkillPill skill="MySQL" />
               </TagList>
+            </Group>
+            <Group>
+              <H3>Kroll, Investigations</H3>
+              <em>🏢 San Francisco 📅 May 2018 - May 2020</em>
+            </Group>
+            <Group>
+              <H3>
+                U.S. Marine Corps, Sergeant, Cryptolinguistics & Amphibious
+                Reconnaissance
+              </H3>
+              <em>📅 August 2010 - August 2015</em>
+            </Group>
+          </div>
+        </Section>
+        <Section>
+          <div className="gap-2">
+            <H2>Education</H2>
+
+            <Group>
+              <H3>Middlebury Institute of International Studies</H3>
+              <em>🏫 Monterey, CA 📅 May 2016 - August 2015</em>
+            </Group>
+
+            <Group>
+              <H3>Kazan Federal University</H3>
+              <em>🏫 Kazan, Tatarstan, Russia 📅 September 2015 - May 2016</em>
             </Group>
           </div>
         </Section>
