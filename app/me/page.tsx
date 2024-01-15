@@ -1,4 +1,9 @@
 import { Paragraph, Section } from "@ui";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Rory Roccio - Software Engineer",
+};
 
 export default function Me() {
   return (
