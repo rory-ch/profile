@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Pill } from "@ui/Pill";
-import { H1, Highlight } from "@ui/Typography";
-import avatar from "../_assets/face.jpg";
-import github from "../_assets/logos/github-mark-white.svg";
+import { H1 } from "@ui/Typography";
+import avatar from "@app/_assets/avatar.jpg";
+import github from "@app/_assets/logos/github-mark-white.svg";
 
 export const Introduction = () => (
   <div className="gap-2 pt-10">
