@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
-import AppBar from "./_nav/Nav/Nav";
+import { Nav } from "./_nav/Nav";
 
 const roboto = Roboto({ weight: "400", subsets: ["latin"] });
 
@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`bg-slate-800 text-slate-100 ${roboto.className}`}>
-        <AppBar>hello</AppBar>
+        <Nav />
         {children}
       </body>
     </html>
