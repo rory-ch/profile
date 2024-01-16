@@ -16,7 +16,7 @@ const Item = ({ children }: React.PropsWithChildren) => {
 
 const Nav = () => {
   return (
-    <nav className="flex  w-full bg-slate-800/95 text-slate-50 py-4 ph-2 sm:ph-4 fixed shadow-[0_1px_1px_0_rgba(255,255,255,0.1)]">
+    <nav className="flex  w-full bg-slate-800/95 text-slate-50 py-4 ph-2 sm:ph-4 fixed shadow-[0_1px_1px_0_rgba(255,255,255,0.1)] z-50">
       <div className="flex-row sm:max-w-4xl m-auto uppercase font-mono relative w-full">
         <Item>
           <Link href={config[0].href}>{config[0].label}</Link>
