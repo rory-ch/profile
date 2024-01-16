@@ -1,17 +1,10 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Section, Pill } from "@app/_ui";
-import type { Metadata } from "next";
-import Link from "next/link";
 import Image from "next/image";
 import carbonHealthLogo from "@assets/carbon-health-logo.svg";
 import hackReactorLogo from "@assets/logos/hack-reactor.svg";
 import { monoLight } from "@ui/Typography/fonts/mono-light";
 import { Code, H2, H3, Highlight, Paragraph } from "@ui";
-
-export const metadata: Metadata = {
-  title: "Rory Roccio - Software Engineer",
-  description: "Follow me for software engineering insights!",
-};
 
 const SkillLevel = ({ children }: React.PropsWithChildren) => (
   <em className={`text-xs ${monoLight.className}`}>{children}</em>
