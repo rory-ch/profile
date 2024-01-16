@@ -12,3 +12,8 @@ export const me: Page = {
   label: "More About me",
   pathname: "/me",
 };
+
+export const dashboard: Page = {
+  label: "Dashboard",
+  pathname: "/dashboard",
+};
